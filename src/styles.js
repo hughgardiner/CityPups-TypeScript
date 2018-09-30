@@ -8,10 +8,25 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#52b479'
+    backgroundColor: '#00DF5D',
+    opacity: 0.7
+  },
+  homePagePicture: {
+    width: '100%', 
+    height: '100%',
+    position: 'absolute',
+    opacity: 0.3
+  },
+  titleTextView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   titleText: {
-    color: 'white'
+    color: 'white',
+    alignItems: 'center',
+    fontFamily: 'DancingScript-Bold',
+    fontSize: 50
   },
   bottomPanel: {
     flex: 1,
@@ -24,7 +39,9 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   greetingText: {
-    color: '#52b479'
+    color: '#00B561',
+    fontFamily: 'HelveticaNeue',
+    fontSize: 18
   },
   getStartedContainer: {
     flex: 1,  
@@ -32,11 +49,12 @@ export default StyleSheet.create({
     // paddingHorizontal: 10
   },
   getStartedButton: {
-    backgroundColor: '#52b479',
+    backgroundColor: '#00B561',
     alignItems: 'center',
     paddingVertical: 15
   },
   getStartedText: {
-    color: 'white'
+    color: 'white',
+    fontFamily: 'HelveticaNeue-Bold'
   }
 });
