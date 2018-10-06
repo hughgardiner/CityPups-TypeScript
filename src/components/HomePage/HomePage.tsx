@@ -11,7 +11,7 @@ export class HomePage extends React.Component<{}> {
       <View style={styles.container}>
         <View style={styles.topPanel}>
           <ImageBackground source={dogGroup} style={styles.homePagePicture}/>
-          <Image source={boneLogo} style={styles.boneLogoHome}/>
+          <Image source={boneLogo} style={styles.boneLogoHome} resizeMode="contain"/>
           <Text style={styles.titleText}>City Pups</Text>
         </View>
         <View style={styles.bottomPanel}>

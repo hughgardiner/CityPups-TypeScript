@@ -17,6 +17,10 @@ export default StyleSheet.create({
     position: 'absolute',
     opacity: 0.3
   },
+  boneLogoHome: {
+    width: '10%',
+    height: '10%'
+  },
   titleTextView: {
     flex: 1,
     justifyContent: 'center',
@@ -67,9 +71,5 @@ export default StyleSheet.create({
     color: 'white',
     fontFamily: 'HelveticaNeue-Bold',
     fontSize: 16
-  },
-  boneLogoHome: {
-    width: '10%', 
-    height: '10%'
-  },
+  }
 });
