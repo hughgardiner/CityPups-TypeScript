@@ -34,27 +34,42 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   greetingContainer: {
-    flex: 1,
+    flex: 2,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   greetingText: {
     color: '#00B561',
     fontFamily: 'HelveticaNeue',
-    fontSize: 18
+    fontSize: 18,
+    lineHeight: 25 
+  },
+  helperDogHome: {
+    flex: 1,
+    position: 'absolute',
+    left: 200,
+    top: -57
   },
   getStartedContainer: {
     flex: 1,  
-    width: '80%'
-    // paddingHorizontal: 10
+    width: '80%',
+    paddingVertical: -50
   },
   getStartedButton: {
     backgroundColor: '#00B561',
     alignItems: 'center',
-    paddingVertical: 15
+    paddingVertical: 15,
+    shadowOffset:{  width: 5,  height: 5,  },
+    shadowColor: 'gray',
+    shadowOpacity: 1.0,
   },
   getStartedText: {
     color: 'white',
-    fontFamily: 'HelveticaNeue-Bold'
-  }
+    fontFamily: 'HelveticaNeue-Bold',
+    fontSize: 16
+  },
+  boneLogoHome: {
+    width: '10%', 
+    height: '10%'
+  },
 });
