@@ -1,12 +1,17 @@
-import React from 'react';
-import {Component} from 'react';
 import {HomePage} from './src/components/HomePage/HomePage'
+import {SizeQuestionPage} from './src/components/SizeQuestionPage/SizeQuestionPage'
+import {
+  createStackNavigator,
+} from 'react-navigation';
 
 type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <HomePage/>
-    );
-  }
-}
+export default createStackNavigator({
+  HomePage: { screen: HomePage },
+  SizeQuestionPage: { screen: SizeQuestionPage },
+},
+{
+  headerMode: 'none',
+    navigationOptions: {
+        headerVisible: false,
+    }
+});

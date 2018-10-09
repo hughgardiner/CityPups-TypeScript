@@ -71,5 +71,10 @@ export default StyleSheet.create({
     color: 'white',
     fontFamily: 'HelveticaNeue-Bold',
     fontSize: 16
+  },
+  questionText: {
+    color: 'white',
+    fontFamily: 'HelveticaNeue-Bold',
+    fontSize: 32
   }
 });

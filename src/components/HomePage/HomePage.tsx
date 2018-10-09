@@ -7,6 +7,7 @@ import boneLogo from '../../../assets/images/boneLogo.png';
 
 export class HomePage extends React.Component<{}> {
   render() {
+    const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
         <View style={styles.topPanel}>
@@ -15,14 +16,14 @@ export class HomePage extends React.Component<{}> {
           <Text style={styles.titleText}>City Pups</Text>
         </View>
         <View style={styles.bottomPanel}>
-          <View style={styles.greetingContainer}>
+        <View style={styles.greetingContainer}>
             <Text style={styles.greetingText}>Tell us a little about yourself,</Text>
             <Text style={styles.greetingText}>and we'll match you with the</Text>
             <Text style={styles.greetingText}>perfect city dogs to adopt!</Text>
           </View>
           <View style={styles.getStartedContainer}>
             <Image source={helperDog} style={styles.helperDogHome}/>
-            <TouchableOpacity style={styles.getStartedButton} onPress={() => {return true}}>
+            <TouchableOpacity style={styles.getStartedButton} onPress={() => {navigate('SizeQuestionPage')}}>
               <Text style={styles.getStartedText}>Get Started</Text>
             </TouchableOpacity>
           </View>
