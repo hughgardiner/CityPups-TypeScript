@@ -54,12 +54,12 @@ export default StyleSheet.create({
     left: 200,
     top: -57
   },
-  getStartedContainer: {
+  navigationButtonContainer: {
     flex: 1,  
     width: '80%',
     paddingVertical: -50
   },
-  getStartedButton: {
+  navigationButton: {
     backgroundColor: '#00B561',
     alignItems: 'center',
     paddingVertical: 15,
@@ -67,14 +67,52 @@ export default StyleSheet.create({
     shadowColor: 'gray',
     shadowOpacity: 1.0,
   },
-  getStartedText: {
+  navigationButtonText: {
     color: 'white',
     fontFamily: 'HelveticaNeue-Bold',
     fontSize: 16
   },
   questionText: {
+    flex: 1,
     color: 'white',
     fontFamily: 'HelveticaNeue-Bold',
-    fontSize: 32
+    fontSize: 32,
+    top: '15%',
+    left: '10%',
+    right: '10%'
+  },
+  answerPanel: {
+    flex: 1,
+    position: 'absolute',
+    borderRadius: 4,
+    borderWidth: 3,
+    borderColor: '#000000',
+    backgroundColor: 'white', 
+    top: '25%', 
+    left: '5%', 
+    right: '5%',
+    bottom: '15%',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  answerButtonContainer: {
+    flex: 1,  
+    width: '80%',
+    paddingVertical: -50,
+  },
+  answerButton: {
+    backgroundColor: 'white',
+    alignItems: 'center',
+    paddingVertical: 15
+  },
+  answerButtonText: {
+
+  },
+  questionTopPanel: {
+    flex: 1,
+    // justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#00DF5D',
+    opacity: 0.7
   }
 });

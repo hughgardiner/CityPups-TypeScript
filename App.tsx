@@ -1,17 +1,18 @@
-import {HomePage} from './src/components/HomePage/HomePage'
-import {SizeQuestionPage} from './src/components/SizeQuestionPage/SizeQuestionPage'
+
+import {HomePage} from "./src/components/HomePage/HomePage";
+import {SizeQuestionPage} from "./src/components/SizeQuestionPage/SizeQuestionPage";
 import {
   createStackNavigator,
-} from 'react-navigation';
+} from "react-navigation";
 
-type Props = {};
 export default createStackNavigator({
+  // HomePage: { screen: HomePage },
   HomePage: { screen: HomePage },
   SizeQuestionPage: { screen: SizeQuestionPage },
 },
 {
-  headerMode: 'none',
+  headerMode: "none",
     navigationOptions: {
         headerVisible: false,
-    }
+    },
 });
