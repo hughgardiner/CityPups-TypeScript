@@ -78,41 +78,55 @@ export default StyleSheet.create({
     fontFamily: 'HelveticaNeue-Bold',
     fontSize: 32,
     top: '15%',
-    left: '10%',
+    left: '3%',
     right: '10%'
   },
   answerPanel: {
     flex: 1,
     position: 'absolute',
-    borderRadius: 4,
-    borderWidth: 3,
     borderColor: '#000000',
     backgroundColor: 'white', 
     top: '25%', 
     left: '5%', 
     right: '5%',
     bottom: '15%',
-    justifyContent: 'center',
-    alignItems: 'center'
+    flexDirection: 'column',
+    alignItems: 'center',
+    paddingVertical: '17%'
   },
   answerButtonContainer: {
     flex: 1,  
     width: '80%',
-    paddingVertical: -50,
+    justifyContent: 'space-between'
   },
   answerButton: {
     backgroundColor: 'white',
     alignItems: 'center',
-    paddingVertical: 15
+    paddingVertical: 15,
+    borderRadius: 1,
+    borderColor: '#00B561',
+    borderWidth: 1,
+    borderRadius: 12
   },
   answerButtonText: {
-
+    color: '#00B561'
   },
   questionTopPanel: {
     flex: 1,
     // justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#00DF5D',
-    opacity: 0.7
+    backgroundColor: '#00B561',
+    opacity: 1
+  },  
+  questionPagePicture: {
+    width: '100%', 
+    height: '100%',
+    position: 'absolute',
+    opacity: 0.03
+  },
+  continueButtonContainer: {
+    flex: 1,  
+    width: '80%',
+    justifyContent: 'flex-end'
   }
 });

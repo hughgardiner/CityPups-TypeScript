@@ -7,7 +7,7 @@ import {
 
 export default createStackNavigator({
   // HomePage: { screen: HomePage },
-  HomePage: { screen: HomePage },
+  HomePage: { screen: SizeQuestionPage },
   SizeQuestionPage: { screen: SizeQuestionPage },
 },
 {

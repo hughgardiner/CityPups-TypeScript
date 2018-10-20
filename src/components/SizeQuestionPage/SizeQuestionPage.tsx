@@ -9,7 +9,7 @@ export class SizeQuestionPage extends React.Component<{}> {
     return (
       <View style={styles.container}>
         <View style={styles.questionTopPanel}>
-          <ImageBackground source={questionPageBackground} style={styles.homePagePicture}/>
+          <ImageBackground source={questionPageBackground} style={styles.questionPagePicture}/>
           <Text style={styles.questionText}>What size dog are you looking for?</Text>
         </View>
         <View style={styles.bottomPanel}>
@@ -22,7 +22,27 @@ export class SizeQuestionPage extends React.Component<{}> {
         <View style={styles.answerPanel}>
           <View style={styles.answerButtonContainer}>
             <TouchableOpacity style={styles.answerButton}>
-              <Text style={styles.answerButtonText}>Answer 1</Text>
+              <Text style={styles.answerButtonText}>SMOLL</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.answerButtonContainer}>
+            <TouchableOpacity style={styles.answerButton}>
+              <Text style={styles.answerButtonText}>BEEFY</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.answerButtonContainer}>
+            <TouchableOpacity style={styles.answerButton}>
+              <Text style={styles.answerButtonText}>BEEFIER</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.answerButtonContainer}>
+            <TouchableOpacity style={styles.answerButton}>
+              <Text style={styles.answerButtonText}>BEEFCAKE!!</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.continueButtonContainer}>
+            <TouchableOpacity style={styles.navigationButton}>
+              <Text style={styles.navigationButtonText}>Continue</Text>
             </TouchableOpacity>
           </View>
         </View>
