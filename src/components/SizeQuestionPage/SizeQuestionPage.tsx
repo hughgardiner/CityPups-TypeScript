@@ -1,7 +1,20 @@
-import React from "react";
-import {TouchableOpacity, Text, View, ImageBackground} from "react-native";
-import styles from "../../styles";
-import questionPageBackground from "../../../assets/images/questionPageBackground.png";
+import React from 'react';
+import {
+  Text,
+  TouchableOpacity,
+  View,
+  ImageBackground,
+  Image,
+  TouchableHighlight,
+} from 'react-native';
+import { AnswerButton } from '../AnswerButton/AnswerButton';
+import styles from './styles';
+import questionPageBackground from '../../../assets/images/questionPageBackground.png';
+import tinyDogIcon from '../../../assets/images/tinyDogIcon.png';
+import smallDogIcon from '../../../assets/images/smallDogIcon.png';
+import mediumDogIcon from '../../../assets/images/mediumDogIcon.png';
+import largeDogIcon from '../../../assets/images/largeDogIcon.png';
+import backArrow from '../../../assets/images/backArrow.png';
 
 export class SizeQuestionPage extends React.Component<{}> {
   public render() {
@@ -9,37 +22,43 @@ export class SizeQuestionPage extends React.Component<{}> {
     return (
       <View style={styles.container}>
         <View style={styles.questionTopPanel}>
-          <ImageBackground source={questionPageBackground} style={styles.questionPagePicture}/>
-          <Text style={styles.questionText}>What size dog are you looking for?</Text>
+          <TouchableHighlight
+            onPress={() => {
+              navigate('HomePage');
+            }}
+          >
+            <Image style={styles.backArrowButton} source={backArrow} />
+          </TouchableHighlight>
+          <ImageBackground
+            source={questionPageBackground}
+            style={styles.questionPagePicture}
+          />
+          <Text style={styles.questionText}>
+            What size dog are {'\n'} you looking for?
+          </Text>
         </View>
-        <View style={styles.bottomPanel}>
-          <View style={styles.navigationButtonContainer}>
-            <TouchableOpacity style={styles.navigationButton} onPress={() => {navigate("HomePage"); }}>
-              <Text style={styles.navigationButtonText}>Go Back</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
+        <View style={styles.bottomPanel} />
         <View style={styles.answerPanel}>
-          <View style={styles.answerButtonContainer}>
-            <TouchableOpacity style={styles.answerButton}>
-              <Text style={styles.answerButtonText}>SMOLL</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.answerButtonContainer}>
-            <TouchableOpacity style={styles.answerButton}>
-              <Text style={styles.answerButtonText}>BEEFY</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.answerButtonContainer}>
-            <TouchableOpacity style={styles.answerButton}>
-              <Text style={styles.answerButtonText}>BEEFIER</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.answerButtonContainer}>
-            <TouchableOpacity style={styles.answerButton}>
-              <Text style={styles.answerButtonText}>BEEFCAKE!!</Text>
-            </TouchableOpacity>
-          </View>
+          <AnswerButton
+            buttonText={'Tiny'}
+            iconSource={tinyDogIcon}
+            iconStyle={[styles.dogIconStyle, styles.tinyDogIconSize]}
+          />
+          <AnswerButton
+            buttonText={'Small'}
+            iconSource={smallDogIcon}
+            iconStyle={[styles.dogIconStyle, styles.smallDogIconSize]}
+          />
+          <AnswerButton
+            buttonText={'Medium'}
+            iconSource={mediumDogIcon}
+            iconStyle={[styles.dogIconStyle, styles.mediumDogIconSize]}
+          />
+          <AnswerButton
+            buttonText={'Large'}
+            iconSource={largeDogIcon}
+            iconStyle={styles.dogIconStyle}
+          />
           <View style={styles.continueButtonContainer}>
             <TouchableOpacity style={styles.navigationButton}>
               <Text style={styles.navigationButtonText}>Continue</Text>
