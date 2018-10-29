@@ -15,6 +15,8 @@ import smallDogIcon from '../../../assets/images/smallDogIcon.png';
 import mediumDogIcon from '../../../assets/images/mediumDogIcon.png';
 import largeDogIcon from '../../../assets/images/largeDogIcon.png';
 import backArrow from '../../../assets/images/backArrow.png';
+import helperDog from '../../../assets/images/helperDog.png';
+import CityPup from '../CityPup/CityPup';
 
 export class SizeQuestionPage extends React.Component<{}> {
   public render() {
@@ -37,7 +39,12 @@ export class SizeQuestionPage extends React.Component<{}> {
             What size dog are {'\n'} you looking for?
           </Text>
         </View>
-        <View style={styles.bottomPanel} />
+        <View style={styles.bottomPanel}>
+          <View style={styles.cityPupContainer}>
+            <CityPup />
+            <View></View>
+          </View>
+        </View>
         <View style={styles.answerPanel}>
           <AnswerButton
             buttonText={'Tiny'}

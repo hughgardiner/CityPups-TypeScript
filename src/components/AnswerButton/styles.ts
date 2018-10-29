@@ -6,7 +6,6 @@ export default StyleSheet.create({
     flex: 1,
     width: '80%',
     justifyContent: 'space-between',
-    // alignItems: 'stretch'
   },
   answerButton: {
     backgroundColor: 'white',
