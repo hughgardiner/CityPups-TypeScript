@@ -5,18 +5,6 @@ export default StyleSheet.create({
   container: {
     flex: 1,
   },
-  topPanel: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#00DF5D',
-    opacity: 0.7,
-  },
-  bottomPanel: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   questionTopPanel: {
     flex: 1,
     alignItems: 'center',
@@ -45,7 +33,7 @@ export default StyleSheet.create({
     top: '30%',
     left: '6%',
     right: '6%',
-    bottom: '15%',
+    bottom: '20%',
     flexDirection: 'column',
     alignItems: 'center',
     paddingVertical: '13%',
@@ -121,4 +109,12 @@ export default StyleSheet.create({
     fontFamily: 'HelveticaNeue-Bold',
     fontSize: 16,
   },
+  bottomPanel: {
+    flex: 1,
+    justifyContent: 'flex-end',
+  },
+  cityPupContainer: {
+    top: 50,
+    left: 20
+  }
 });
