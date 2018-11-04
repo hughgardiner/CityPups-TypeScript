@@ -8,7 +8,7 @@ import {
   Path,
   Polygon
 } from 'react-native-svg';
-import { View, StyleSheet, Dimensions } from 'react-native';
+import { Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
 

@@ -17,6 +17,7 @@ import largeDogIcon from '../../../assets/images/largeDogIcon.png';
 import backArrow from '../../../assets/images/backArrow.png';
 import helperDog from '../../../assets/images/helperDog.png';
 import CityPup from '../CityPup/CityPup';
+import TipBox from '../TipBox/TipBox';
 
 export class SizeQuestionPage extends React.Component<{}> {
   public render() {
@@ -42,7 +43,9 @@ export class SizeQuestionPage extends React.Component<{}> {
         <View style={styles.bottomPanel}>
           <View style={styles.cityPupContainer}>
             <CityPup />
-            <View></View>
+          </View>
+          <View style={styles.tipBoxContainer}>
+            <TipBox />
           </View>
         </View>
         <View style={styles.answerPanel}>

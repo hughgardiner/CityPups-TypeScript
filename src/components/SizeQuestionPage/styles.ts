@@ -111,10 +111,15 @@ export default StyleSheet.create({
   },
   bottomPanel: {
     flex: 1,
-    justifyContent: 'flex-end',
+    justifyContent: 'flex-start',
+    // alignContent: 'flex-end'
   },
   cityPupContainer: {
-    top: 50,
-    left: 20
+    top: 190,
+    left: 30
+  },
+  tipBoxContainer: {
+    left: 125,
+    bottom: 25
   }
 });
