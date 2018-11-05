@@ -40,7 +40,7 @@ export class HomePage extends React.Component<{}> {
             <TouchableOpacity
               style={styles.navigationButton}
               onPress={() => {
-                navigate('SizeQuestionPage');
+                navigate('SizeQuestionPage', { navigation: this.props.navigation });
               }}
             >
               <Text style={styles.navigationButtonText}>Get Started</Text>

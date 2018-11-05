@@ -6,8 +6,8 @@ import {
 } from "react-navigation";
 
 export default createStackNavigator({
-  // HomePage: { screen: HomePage },
-  HomePage: { screen: SizeQuestionPage },
+  HomePage: { screen: HomePage },
+  // HomePage: { screen: SizeQuestionPage },
   SizeQuestionPage: { screen: SizeQuestionPage },
 },
   {

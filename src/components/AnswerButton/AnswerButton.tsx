@@ -12,9 +12,9 @@ import {
 import styles from './styles';
 import answerCheck from '../../../assets/images/answerCheck.png';
 
-interface AnswerProps {
+export interface AnswerProps {
   iconSource: ImageSourcePropType;
-  iconStyle: ImageStyle;
+  iconStyle: any;
   buttonText: string;
 }
 
