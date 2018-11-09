@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 import { PRIMARY_GREEN } from '../../styles';
 
 export default StyleSheet.create({
-  dogIconStyle: {
+  apartmentIconStyle: {
     position: 'absolute',
     tintColor: PRIMARY_GREEN,
     width: 30,
@@ -11,22 +11,13 @@ export default StyleSheet.create({
     top: 5,
     resizeMode: 'contain',
   },
-  mediumDogIconSize: {
-    width: 25,
-    height: 25,
-    left: 15,
-    top: 7,
+  smallApartmentStyle: {
+    width: 45,
+    height: 45,
+    left: 2,
+    top: -2,
   },
-  smallDogIconSize: {
-    width: 40,
-    height: 40,
-    left: 6,
-    top: 1,
+  answerButtonText: {
+    left: 48,
   },
-  tinyDogIconSize: {
-    width: 35,
-    height: 35,
-    left: 7,
-    top: 3,
-  },
-});
+})

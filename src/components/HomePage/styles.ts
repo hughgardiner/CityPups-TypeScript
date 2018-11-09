@@ -20,11 +20,6 @@ export default StyleSheet.create({
     width: '10%',
     height: '10%',
   },
-  titleTextView: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   titleText: {
     color: 'white',
     alignItems: 'center',

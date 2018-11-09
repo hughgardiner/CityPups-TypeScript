@@ -5,9 +5,9 @@ import {
   Image,
   Text,
   ImageSourcePropType,
-  ImageStyle,
   ViewStyle,
   RegisteredStyle,
+  TextStyle,
 } from 'react-native';
 import styles from './styles';
 import answerCheck from '../../../assets/images/answerCheck.png';
@@ -16,6 +16,8 @@ export interface AnswerProps {
   iconSource: ImageSourcePropType;
   iconStyle: any;
   buttonText: string;
+  buttonTextStyle?: RegisteredStyle<TextStyle>;
+  multiSelect?: boolean;
 }
 
 interface AnswerState {
@@ -52,7 +54,7 @@ export class AnswerButton extends React.Component<AnswerProps, AnswerState> {
   };
 
   public render() {
-    const buttonCheck = this.state.selected ? (
+    const buttonCheck = this.state.selected && this.props.multiSelect ? (
       <Image source={answerCheck} style={styles.answerCheck} />
     ) : null;
 
@@ -66,7 +68,7 @@ export class AnswerButton extends React.Component<AnswerProps, AnswerState> {
             source={this.props.iconSource}
             style={[this.props.iconStyle, this.state.iconColor]}
           />
-          <Text style={[styles.answerButtonText, this.state.textColor]}>
+          <Text style={[styles.answerButtonText, this.state.textColor, this.props.buttonTextStyle]}>
             {this.props.buttonText}
           </Text>
           {buttonCheck}

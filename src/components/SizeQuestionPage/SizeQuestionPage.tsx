@@ -11,22 +11,26 @@ const sizePageButtons: AnswerProps[] = [
   {
     buttonText: 'Tiny',
     iconSource: tinyDogIcon,
-    iconStyle: [styles.dogIconStyle, styles.tinyDogIconSize]
+    iconStyle: [styles.dogIconStyle, styles.tinyDogIconSize],
+    multiSelect: true
   },
   {
     buttonText: 'Small',
     iconSource: smallDogIcon,
-    iconStyle: [styles.dogIconStyle, styles.smallDogIconSize]
+    iconStyle: [styles.dogIconStyle, styles.smallDogIconSize],
+    multiSelect: true
   },
   {
     buttonText: 'Medium',
     iconSource: mediumDogIcon,
-    iconStyle: [styles.dogIconStyle, styles.mediumDogIconSize]
+    iconStyle: [styles.dogIconStyle, styles.mediumDogIconSize],
+    multiSelect: true
   },
   {
     buttonText: 'Large',
     iconSource: largeDogIcon,
     iconStyle: styles.dogIconStyle,
+    multiSelect: true
   }
 ]
 
@@ -37,7 +41,7 @@ export class SizeQuestionPage extends React.Component<{}> {
       navigation: this.props.navigation,
       answerButtons: sizePageButtons,
       previousPage: 'HomePage',
-      nextPage: 'LivingPage'
+      nextPage: 'LivingQuestionPage'
     }
     return (
       <QuestionPage {...sizePageProps} />

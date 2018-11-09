@@ -6,6 +6,8 @@ import {
   ImageBackground,
   Image,
   TouchableHighlight,
+  RegisteredStyle,
+  TextStyle,
 } from 'react-native';
 import { AnswerButton, AnswerProps } from '../AnswerButton/AnswerButton';
 import styles from './styles';
@@ -31,9 +33,11 @@ export class QuestionPage extends React.Component<QuestionPageProps> {
     const answerButtons = this.props.answerButtons.map((answerButton, i) => {
       return (<AnswerButton
         key={i}
+        buttonTextStyle={answerButton.buttonTextStyle}
         buttonText={answerButton.buttonText}
         iconSource={answerButton.iconSource}
-        iconStyle={answerButton.iconStyle} />);
+        iconStyle={answerButton.iconStyle}
+        multiSelect={answerButton.multiSelect} />);
     });
     return (
       <View style={styles.container}>
