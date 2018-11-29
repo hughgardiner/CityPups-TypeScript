@@ -21,12 +21,12 @@ export default StyleSheet.create({
     width: 40,
     height: 40,
     left: 6,
-    top: 1,
+    top: .5,
   },
   tinyDogIconSize: {
     width: 35,
     height: 35,
     left: 7,
-    top: 3,
+    top: 1,
   },
 });
